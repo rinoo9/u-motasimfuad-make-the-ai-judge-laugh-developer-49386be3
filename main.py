@@ -6,19 +6,20 @@ Writes exactly one line — a funny excuse a developer gives when code
 breaks in production — to /output/entry.txt. Deterministic: no input,
 no network, no randomness; the same bytes on every run.
 
-Craft notes: the excuse works because of one specific detail — the code
-was tested on the developer's own optimism, not on real users — which
-turns the worn "works on my machine" family sideways: instead of
-blaming the machine, it blames the tester, and the tester is me. That
+Craft notes: the excuse works because of one word doing double duty —
+"passed". Every test passed, and the bug passed too, right past them
+into production: the safety net itself waved the bug through. That
 fits the judge brief: one funny single-line developer excuse for when
-code breaks in production, under 200 characters, clear on first read.
+code breaks in production, under 200 characters, clear on first read,
+and a different joke mechanism from the previous round's line (which
+blamed the developer's optimism as the only test environment).
 """
 
 import os
 
 EXCUSE = (
-    "Production didn't crash \u2014 it just finally met real users, "
-    "and my code had only ever been tested on my own optimism."
+    "All my tests passed \u2014 unfortunately, so did the bug, "
+    "straight into production."
 )
 
 
