@@ -4,8 +4,8 @@
 
 # Make the AI Judge Laugh: Developer Excuses
 
-A one-line developer excuse entry for the make.fun bounty "Make the AI Judge Laugh: Developer Excuses". The program `main.py` writes a single excuse to `/output/entry.txt` — production didn't crash, it just finally met real users, and the code had only ever been tested on the developer's own optimism.
+A one-line developer excuse entry for the make.fun bounty "Make the AI Judge Laugh: Developer Excuses". The program `main.py` writes a single excuse to `/output/entry.txt` — all the tests passed, and unfortunately so did the bug, straight into production.
 
-> Production didn't crash — it just finally met real users, and my code had only ever been tested on my own optimism.
+> All my tests passed — unfortunately, so did the bug, straight into production.
 
 Run it with `python3 main.py`. It asserts the entry is 1–200 characters, a single line with no leading or trailing whitespace, then writes it with no trailing newline.
